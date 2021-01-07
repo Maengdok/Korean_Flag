@@ -1,0 +1,343 @@
+/* 
+If you want to resize each part, uncomment the next comment section.
+
+Here, you can get the sizes for each elements of the korean flag.
+https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_South_Korea_%28construction_sheet%29.svg/1280px-Flag_of_South_Korea_%28construction_sheet%29.svg.png
+*/
+
+/*
+.box {
+  height: 600px;
+  width: 900px;
+  left: 30%;
+  top: 10%;
+  border: 1px solid red;
+  position: absolute;
+}
+
+.line1 {
+  width: 1081.66px;
+  height: 1px;
+  display: flex;
+  background : purple;
+  position: relative;
+  top: 50%;
+  left: -10%;
+  transform: rotate(-33.7deg) translateY(-50%);
+  z-index: 1;
+}
+
+.line2 {
+  width: 1081.66px;
+  height: 1px;
+  display: flex;
+  background : purple;
+  position: relative;
+  top: 50%;
+  right: 10%;
+  transform: rotate(33.7deg) translateY(-50%);
+  z-index: 1;
+}
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.korean_flag{
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: linear-gradient(rgb(198, 12, 48) 50%, rgb(0, 52, 120) 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateZ(30deg);
+}
+
+.korean_flag:before, .korean_flag:after {
+  flex: 1;
+  border: solid 49.98px rgb(198, 12, 48);
+  height: 49.98px;
+  border-radius: 50%;
+  background: rgb(198, 12, 48);
+  content: '';
+}
+
+.korean_flag:after {
+  border-color: rgb(0, 52, 120);
+  background: rgb(0, 52, 120);
+}
+
+.geon {
+  display: flex;
+  height: 100px;
+  width: 150px;
+  position: absolute;
+  top: 84px;
+  left: -200px;
+  transform: rotateZ(-87deg);
+}
+
+.geon_top {
+  content: '';
+  background: black;
+  width: 150px;
+  height: 25px;
+}
+
+.geon_mid {
+  content: '';
+  position: absolute;
+  background: black;
+  top: 25px;
+  width: 150px;
+  height: 25px;
+  margin-top: 12.5px;
+}
+
+.geon_bot {
+  content: '';
+  position: absolute;
+  background: black;
+  bottom: 0px;
+  width: 150px;
+  height: 25px;
+}
+
+.li {
+  display: flex;
+  height: 100px;
+  width: 150px;
+  position: absolute;
+  top: 343px;
+  left: -44.5px;
+  transform: rotateZ(-154deg);
+}
+
+.li_top {
+  content: '';
+  background: black;
+  width: 150px;
+  height: 25px;
+}
+
+.li_mid {
+  content: '';
+  position: absolute;
+  background: white;
+  top: 25px;
+  width: 150px;
+  height: 25px;
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
+}
+
+.li_mid:before {
+  content: '';
+  display: flex;
+  position: relative;
+  background:black;
+  width: 68.75px;
+  height: 25px;
+}
+
+.li_mid:after {
+  content: '';
+  display: flex;
+  position: relative;
+  background: black;
+  width: 68.75px;
+  height: 25px;
+  left: 81.5px;
+  top: -25px;
+}
+
+.li_bot {
+  content: '';
+  position: absolute;
+  background: black;
+  bottom: 0px;
+  width: 150px;
+  height: 25px;
+}
+
+.gam {
+  display: flex;
+  height: 100px;
+  width: 150px;
+  position: absolute;
+  top: -144px;
+  right: -46px;
+  transform: rotateZ(26.5deg);
+}
+
+.gam_top {
+  content: '';
+  position: absolute;
+  background: white;
+  width: 150px;
+  height: 25px;
+}
+
+.gam_top:before {
+  content: '';
+  display: flex;
+  position: relative;
+  background: black;
+  width: 68.75px;
+  height: 25px;
+}
+
+.gam_top:after {
+  content: '';
+  display: flex;
+  position: relative;
+  background: black;
+  width: 68.75px;
+  height: 25px;
+  left: 81.5px;
+  top: -25px;
+}
+
+.gam_mid {
+  content: '';
+  position: absolute;
+  background: black;
+  top: 25px;
+  width: 150px;
+  height: 25px;
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
+}
+
+.gam_bot {
+  content: '';
+  position: absolute;
+  background: white;
+  bottom: 0px;
+  width: 150px;
+  height: 25px;
+}
+
+.gam_bot:before {
+  content: '';
+  display: flex;
+  position: relative;
+  background:black;
+  width: 68.75px;
+  height: 25px;
+}
+
+.gam_bot:after {
+  content: '';
+  display: flex;
+  position: relative;
+  background: black;
+  width: 68.75px;
+  height: 25px;
+  left: 81.5px;
+  top: -25px;
+}
+
+.gon {
+  display: flex;
+  height: 100px;
+  width: 150px;
+  position: absolute;
+  top: 117.5px;
+  right: -199px;
+  transform: rotateZ(94deg);
+}
+
+.gon_top {
+  content: '';
+  position: absolute;
+  background: white;
+  width: 150px;
+  height: 25px;
+}
+
+.gon_top:before {
+  content: '';
+  display: flex;
+  position: relative;
+  background:black;
+  width: 68.75px;
+  height: 25px;
+}
+
+.gon_top:after {
+  content: '';
+  display: flex;
+  position: relative;
+  background: black;
+  width: 68.75px;
+  height: 25px;
+  left: 81.5px;
+  top: -25px;
+}
+
+.gon_mid {
+  content: '';
+  position: absolute;
+  background: white;
+  top: 25px;
+  width: 150px;
+  height: 25px;
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
+}
+
+.gon_mid:before {
+  content: '';
+  display: flex;
+  position: relative;
+  background:black;
+  width: 68.75px;
+  height: 25px;
+}
+
+.gon_mid:after {
+  content: '';
+  display: flex;
+  position: relative;
+  background: black;
+  width: 68.75px;
+  height: 25px;
+  left: 81.5px;
+  top: -25px;
+}
+
+.gon_bot {
+  content: '';
+  position: absolute;
+  background: white;
+  bottom: 0px;
+  width: 150px;
+  height: 25px;
+}
+
+.gon_bot:before {
+  content: '';
+  display: flex;
+  position: relative;
+  background:black;
+  width: 68.75px;
+  height: 25px;
+}
+
+.gon_bot:after {
+  content: '';
+  display: flex;
+  position: relative;
+  background: black;
+  width: 68.75px;
+  height: 25px;
+  left: 81.5px;
+  top: -25px;
+}
